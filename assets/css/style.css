@@ -4,13 +4,22 @@
   padding:0;  
 }
 
+/* brand color palette */
+:root {
+  --primary: rgba(139, 148, 185, 0.56);
+  --secondary: rgb(153, 161, 192);
+  --tertiary: rgb(39, 40, 43);
+  --dark: rgb(0, 0, 0);
+  --light: rgb(242, 238, 247);
+}
+
 /* Element Selectors */
 body {
   position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
-  background-color: #FDF8F5;
-  color: #4F4846;
+  font-size: 16px;
+  background-color: var(--light);
+  color: black;
 }
 
 h1,
@@ -30,7 +39,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #FDF8F5;
+  color: var(--light);
 }
 
 header,
@@ -38,12 +47,11 @@ footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: #266150;
+  background-color: var(--secondary);
 }
 
 header {
   position: fixed;
-  border-bottom: 10px solid #DDAF94;
 }
 
 footer {
@@ -66,8 +74,8 @@ img {
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
+  border-top: 3px solid var(--primary);
+  background-color:  var(--light);
 }
 
 form {
@@ -75,7 +83,7 @@ form {
   margin: 0 auto;
   width: 500px;
   padding: 10px;
-  border: 5px solid #DDAF94;
+  border: 5px solid var(--primary);
   border-radius: 20px;
 }
 
@@ -99,7 +107,7 @@ textarea {
 button {
   height: 40px;
   width: 120px;
-  background-color: #4F4846;
+  background-color: #7b7f9a;
   color: #FDF8F5;
 }
  
